@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Sample</title>
+</head>
+<body>
+<button onclick = "innerhtml()">Inner HTML</button>
+<button onclick = "innertext()">Inner Text</button>
+<button onclick = "textcontent()">Text Content</button>
+<p id= "demo">Text Only</p>
+<p id= "hello">Hello <b>World</b></p>
+<i id="test">Hello <b style="display:none">abc</b>World </i>
+</body>
+<script>
+function innerhtml()
+{
+document.getElementById("demo").innerText='Overwrite'
+}
+function innertext()
+{
+document.getElementById("hello").innerHTML;
+alert(document.getElementById("hello").innerHTML);
+}
+function textcontent()
+{
+document.getElementById("test").textContent;
+alert(document.getElementById("test").textContent);}
+</script>
+</html>
+

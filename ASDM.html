@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Sample</title>
+</head>
+<body>
+Enter No: <input type="text" name="a" id="first"><br>
+Enter No: <input type="text" name="b" id="second"><br>
+<br>
+<button onclick="add()">Addition</button>
+<button onclick="sub()">Subtraction</button>
+<button onclick="mul()">Multiplication</button>
+<button onclick="div()">Division</button>
+</body>
+<script>
+var a, b, Add, Sub, Mul, Div;
+
+function add() {
+  a = parseInt(document.getElementById("first").value);
+  b = parseInt(document.getElementById("second").value);
+  Add = a + b;
+  document.write("Addition: " + Add);
+}
+
+function sub() {
+  a = parseInt(document.getElementById("first").value);
+  b = parseInt(document.getElementById("second").value);
+  Sub = a - b;
+  document.write("Subtraction: " + Sub);
+}
+
+function mul() {
+  a = parseInt(document.getElementById("first").value);
+  b = parseInt(document.getElementById("second").value);
+  Mul = a * b;
+  document.write("Multiplication: " + Mul);
+}
+
+function div() {
+  a = parseInt(document.getElementById("first").value);
+  b = parseInt(document.getElementById("second").value);
+  Div = a / b;
+  document.write("Division: " + Div);
+}
+</script>
+</html>
