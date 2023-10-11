@@ -1,0 +1,48 @@
+<?php
+$username
+$servername
+$password
+$db_name="yusuf"
+$conn=new mysqli($servername,$username,$password,$db_name)
+if($conn->connect_error)
+{
+die("connection error"$conn->connect_error);
+}}
+
+else
+{
+$qry="create table info(name varchar(50),rolllno int);";
+if ($conn->query($qry)===True)
+{
+echo "table createdc sucesfully";
+}
+else
+{
+echo"inserted sucessfully";
+}
+else
+{
+echo"error while inserting""</br">
+$conn->error;
+}
+$qry="select*from info"
+$data=conn->query($qry);
+$insert_qry="insert into info values
+('yusuf,1')";
+if($conn->query($insert_qry))
+{
+echo"inserted sucessfully";
+}
+else
+{
+echo"error while inserting"."</br>"
+$conn->error;
+}
+if ($data->num_rows>1)
+{
+echo"new record inserted";
+}
+else{}
+}
+$conn->close();
+?>
